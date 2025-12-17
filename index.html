@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's App</title>
+    <meta name="description" content="Harry's personal website sharing technical blogs and work insights.">
+    <meta name="keywords" content="Harry, blog, technology, work, life">
+    <meta name="author" content="Harry">
+
+    <!-- 網站圖標 -->
+    <link rel="icon" type="image/x-icon" href="/cos/site/img/favicon.ico">
+    <link rel="shortcut icon" href="/cos/site/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/cos/site/img/favicon.ico">
+    
+    <!-- 外部CSS檔案 -->
+    <link rel="stylesheet" href="/www/css/style.css">
+    
+    <!-- SEO和社交媒體標籤 -->
+    <meta property="og:title" content="Harry's Work - Personal Site">
+    <meta property="og:description" content="Sharing technical articles, work experience and life thoughts.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    
+    <!-- 預加載重要資源 -->
+    <link rel="preload" href="/www/js/app.js" as="script">
+    <link rel="preload" href="/www/data/data.js" as="script">
+</head>
+<body>
+    <div class="container">
+        <!-- 語言切換按鈕 -->
+        <div class="language-switcher">
+            <!-- <a href="https://harrywork.com/eve/index.html" id="eveindexgo2linkbtn" target="_blank">❤️Eve</a> -->
+            <!-- 語言按鈕將由JavaScript動態生成 -->
+        </div>
+
+        <div class="header">
+            <!-- 主要內容區域 -->
+            <div class="main-content">
+                <div id="message">
+                    <h1>Harry的個人開發作品部落格</h1>
+                    <p id="welcome"></p>
+                </div>
+
+                <!-- 導航連結 -->
+                <div class="go2blogwork" id="go2blogwork" >
+                    <a href="./app/">App📱</a>
+                    <a href="./blog/">Blog📝</a>
+                </div>
+            </div>
+
+            <!-- 詩詞展示區域 -->
+            <div class="main-shici">
+                <!-- 詩詞內容將由JavaScript動態加載 -->
+            </div>
+        </div>
+
+        <!-- 頁腳信息 -->
+        <div class="icp" style="display: none;">
+            <p>© 2025 Harry. All rights reserved.</p>
+            <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">請填入備案號</a></p>
+        </div>
+    </div>
+
+    <!-- 隱藏的離線資源 -->
+    <div id="offline-resources" style="display: none;">
+        <!-- 用於離線緩存的資源 -->
+    </div>
+    <!-- 先加載數據，再加載主應用腳本 -->
+    <script src="/www/data/data.js"></script>
+    <script>
+          
+    </script>
+    <script src="/www/js/app.js"></script>
+</body>
+</html>
